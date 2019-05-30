@@ -3,6 +3,22 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const [todos, setTodos] = useState([
+    {
+      text: 'Build another app using React',
+      isCompleted: false
+    },
+    {
+      text: 'Build a better app using React',
+      isCompleted: false
+    },
+    {
+      text: 'Get a React Gig',
+      isCompleted: false
+    },
+  ]);
+
   return (
     <div className="App">
       <header className="App-header">
